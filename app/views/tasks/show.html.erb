@@ -6,6 +6,10 @@
     <div class="card-text">
       <%= @task.details %>
     </div>
+    <div>
+      <input type="checkbox" name="" id="task_status" <%= "checked" if @task.completed %>>
+      <label for="task_status">this task is completed</label>
+    </div>
     <div class="card-link">
       <%= link_to "Edit", edit_path %> / <%= link_to "Back to the Tasks", tasks_path %>
     </div>
